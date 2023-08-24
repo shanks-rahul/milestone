@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        nav ul li{
+            padding: 5px 30px;
+            margin-right: 2px;
+            color: gray;
+        }
+        nav ul li:hover{
+            color: orange;
+            cursor: pointer;
+        }
+        .logo{
+            position: relative;
+
+        }
+        
+        .image{
+            height: 20rem;
+
+        }
+        .person{
+            position: relative;
+    top: -15.1rem;
+    left: 5rem;
+        }
+        .pattern{
+            position: relative;
+            top: -35rem;
+        }
+        .section{
+
+        }
+        .btn{
+            display: flex;
+        }
+        .card-holder{
+
+        }
+        @media screen and (max-width:900px) {
+            .logo{
+                position: relative;
+                right: -2.5rem;
+            }
+            .section{
+                flex-direction: column;
+                align-items: center;
+            }
+            .section button{
+                position: relative;
+                top: 30rem;
+                
+               
+                
+               
+            }
+            .btn img{
+                position: relative;
+                top: 32rem;
+            }
+            .btn{
+                align-items: center;
+                justify-content: center;
+            }
+            .image{
+                position: relative;
+                top: -8rem;
+            }
+            
+            
+        }
+        .card{
+            width: 20rem;
+        }
+        .foot{
+            margin-top: 1px;
+        }
+        footer img{
+            margin-top: 5px;
+        }
+        @media screen and (max-width:1300px) {
+            .foot{
+                flex-direction: column;
+
+            }
+            .card-holder{
+                margin-top: 2rem;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <header class="flex justify-around">
+        <div class="md:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list h-[25px]" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+        </div>
+        <div class="logo flex justify-between w-[102px]">
+            <img class="h-[30px]" src="logo.png">
+            <h1><strong>E GURU</strong></h1>
+        </div>
+        <nav>
+            <ul class="hidden md:flex justify-between" id="navbar">
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Features</li>
+                <li>How It Works</li>
+            </ul>
+        </nav>
+        <div class="border-2 border-solid border-gray-400">
+            <button class="p-1 px-3 text-center text-sm text-black hover:text-orange-400">Sign Up</button>
+        </div>
+    </header>
+
+
+
+
+    <!-- section page -->
+    <div class="section lg:text-start flex flex-row justify-around">
+        <div>
+            <h1 class="mt-[6rem] text-[4rem]"><strong>Study From</strong></h1>
+            <h1 class="text-[4rem]"><strong>Home With Expert</strong></h1>
+            <p class="para border-l-2 border-gray-500 w-[22rem] mt-[2rem] px-2">A learning system based on formalised teaching with the help of resources. </p>
+            <div class="btn">
+                <button class="mt-8 mr-6 text-sm px-5 py-3  bg-orange-400">Get Started</button><button class="mt-8 mr-6 text-sm px-5 py-3 border-2 border-b-0 border-solid">Learn More</button>
+                <img class="h-[60px]" src="curve-arrow.png">
+            </div>
+        </div>
+        <div class="image mt-[6rem]">
+            <img src="orange-arrow.png">
+            <img class="relative top-[24rem]" src="green-arrow.png">
+            <img class="relative left-[16rem] top-[23rem]" src="circle.png">
+           
+            <img class="h-[20rem]" src="main-image-bg.png">
+            
+            <img class="person h-[15rem]" src="main-image.png">
+            
+            <img class="pattern h-[20rem] " src="main-image-pattern.png">
+
+            
+        </div>
+    </div>
+
+
+
+
+
+    <!-- footer section -->
+    <footer class="foot flex justify-between items-center relative top-[9rem] p-[3rem] bg-slate-500">
+        <div class="w-[25rem] ml-[2rem]">
+            <h1 class="text-3xl text-white"><strong>Why We Are The Best</strong></h1>
+            <p class="text-gray-300">A learning system based on formalised teaching with the help of...</p>
+        </div>
+        <div class="card-holder lg:flex justify-around items-center">
+            <div class="card card1">
+                <img class="" src="vector3.png" alt="">
+                <h1 class="mt-[9px] text-2xl text-white"><strong>Expert Teacher</strong></h1>
+                <p class="text-gray-300">A learning system based on formalised teaching with the help of...</p>
+            </div>
+            <div class="card card2">
+                <img class="" src="vector2.png" alt="">
+                <h1 class="mt-[9px] text-2xl text-white"><strong>Online Courses</strong></h1>
+                <p class="text-gray-300">A learning system based on formalised teaching with the help of...</p>
+            </div>
+            <div class="card card3">
+                <img src="vector1.png" alt="">
+                <h1 class="mt-[9px] text-2xl text-white"><strong>24/7 Support</strong></h1>
+                <p class="text-gray-300">A learning system based on formalised teaching with the help of...</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bike Web</title>
+    <style>
+        .btn {
+            border: 1px solid;
+            padding: 4px 11px;
+            border-radius: 18px 0px 0px 18px;
+            height: 2rem;
+
+        }
+
+        .btn2 {
+            border: 1px solid;
+            padding: 4px 11px;
+            border-radius: 0px 18px 18px 0px;
+            height: 2rem;
+            border-left: none;
+        }
+
+        header li {
+            padding: 0 30px;
+        }
+
+        header li:hover {
+            color: rgb(62, 62, 62);
+        }
+
+        .container {}
+
+        .icon {}
+        .box{
+            overflow-x: auto;
+            
+        }
+
+
+        .box h1{
+            text-align: center;
+    padding: 0.3rem;
+        }
+        .box div{
+            padding: 0.5rem;
+            
+            
+            box-shadow: 0px 9px 9px #7d7c7c;
+        }
+        .box p{
+            text-align: center;
+        }
+        .para{}
+        .product-info{}
+        .product-infos{}
+        .image-golf{}
+        .box-1{
+            grid-area: box1;
+        }
+        .box-2{
+            grid-area: box2;
+        }
+        .box-3{
+            grid-area: box3;
+        }
+        .box-4{
+            grid-area: box4;
+        }
+        .container2{
+            display: grid;
+            justify-self: center;
+            align-self: center;
+            grid-template-areas: 
+            "box1 box2"
+            "box3 box4";
+        }
+        .card {
+            margin: 9px 10px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 14rem;
+            border: 1px solid #7d7c7c;
+            padding: 28px 14px;
+            margin: 9px 10px;
+        }
+        .cards:hover{
+            box-shadow: 0px 9px 9px #7d7c7c;
+        }
+        footer{
+            color: white;
+            margin-top: 10rem;
+
+        }
+        footer img{
+            position: relative;
+            bottom: 6rem;
+        }
+
+        @media screen and (max-width:1230px) {
+            .container {
+                flex-direction: column;
+
+                align-items: center;
+            }
+
+        }
+        @media  screen and (max-width:987px) {
+            .product-info{
+                flex-direction: column;
+            }
+        }
+        @media screen and (max-width:720px) {
+            .para{
+                margin-top: 0.2rem;;
+            }
+            
+        }
+        @media  screen and (max-width:987px) {
+            .product-infos{
+                flex-direction: column-reverse;
+            }
+        }
+        @media screen and (max-width:1050px) {
+            .image-golf{
+                width: 47rem;
+            }
+            
+        }
+        @media screen and(max-width:920px) {
+            footer h1,p{
+                font-size: 0.8rem;
+            }
+            footer img{
+                position: relative;
+                bottom: 3rem;
+            }
+            
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+
+    <header class="flex justify-between items-center py-3 border-b-[1px] border-gray-400">
+        <div class="md:hidden ml-6">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor"
+                class="bi bi-list h-[25px]" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </div>
+        <div class="ml-6">
+            <img src="logo.png" alt="">
+        </div>
+        <nav class="">
+            <ul class="hidden md:flex justify-between">
+                <li>Products</li>
+                <li>Gallery</li>
+                <li>Contact</li>
+
+            </ul>
+        </nav>
+        <div class="mr-4">
+            <button class="text-xs hover:text-gray-600 px-3">Log In</button>
+            <button class="text-white py-2 px-3 text-xs bg-slate-800 rounded-lg">Sign Up</button>
+        </div>
+    </header>
+
+    <!-- section -->
+
+
+    <section class=" px-2 md:flex justify-around items-center">
+        <div>
+            <h1 class="text-gray-600 text-7xl border-b-2 border-black py-6">Let's Ride<br><strong>The Future.</strong>
+            </h1>
+            <p class="text-gray-900 text-base py-6 ">Simple and sleek designs with
+                users<br>in mind.</p>
+            <div class="flex justify-between items-center">
+                <p class="text-sm">Buy Now</p>
+                <div class="flex">
+                    <p class="text-sm">watch our <br> how it<br> works</p>
+                    <img class="h-[3.5rem]" src="header play button.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="header image.png" alt="">
+            <div class="icon flex items-center justify-center">
+                <img class="mr-8 h-[4.5rem]" src="01.png" alt="">
+                <button class="btn text-gray-600 hover:text-black hover:bg-gray-100">
+                    <</button><button class="btn2 text-gray-600 hover:text-black hover:bg-gray-100">></button>
+            </div>
+        </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- section 2 -->
+
+
+    <section>
+        <div class="box flex justify-evenly mt-8">
+            <div>
+                <h1 class="text-3xl">105
+                    <sub class="text-sm">lbs</sub>
+                </h1>
+                <p class="text-xs">Net weight</p>
+            </div>
+            <div>
+                <h1 class="text-3xl">25
+                    <sub class="text-sm">mph</sub>
+                </h1>
+                <p class="text-xs">Top Speed</p>
+            </div>
+            <div>
+                <h1 class="text-3xl">38
+                    <sub class="text-sm">miles</sub>
+                </h1>
+                <p class="text-xs">Max Range</p>
+            </div>
+            <div>
+                <h1 class="text-3xl">89
+                    <sub class="text-sm">nm</sub>
+                </h1>
+                <p class="text-xs">Max Torques</p>
+            </div>
+            <div>
+                <h1 class="text-3xl">22%
+                    <sub class="text-sm">slope</sub>
+                </h1>
+                <p class="text-xs">Hill Climbing</p>
+            </div>
+            <div>
+                <h1 class="text-3xl">2x</h1>
+                <p class="text-xs">Hydralic Disc Brakes</p>
+            </div>
+        </div>
+
+        <div class=" text-center mt-12">
+            <h1 class="text-gray-700 text-2xl md:text-5xl "> <strong>Product Information</strong> </h1>
+            <p class="para text-[0.5rem] md:text-sm mt-[1rem]">Our Scooter Has Following Unique Designs and Technology Features: </p>
+        </div>
+        <div class="product-info flex justify-around items-center">
+            <img src="product information image.png" alt="">
+            <div>
+                <div class="flex items-center mb-1"><img src="Icon.png" alt=""><p>Lightweight aircraft grade and aluminium frame</p></div>
+                <div class="flex items-center mb-1"><img src="Icon.png" alt=""><p>Car grade lithium battery</p></div>
+                <div class="flex items-center mb-1"><img src="Icon.png" alt=""><p>Self balanced</p></div>
+                <div class="flex items-center mb-1"><img src="Icon.png" alt=""><p>Plug n Play</p></div>
+                <div class="flex items-center mb-1"><img src="Icon.png" alt=""><p>Quick release adapter</p></div>
+                <div class="flex items-center "><img src="Icon.png" alt=""><p>RFID Key card</p></div>
+            </div>
+        </div>
+        <div class=" text-center mt-12">
+            <img src="high efficiency motor.png" alt="">
+        </div>
+        <div class=" text-center mt-6">
+            <h1 class="text-gray-700 text-2xl md:text-5xl "> <strong>Multiple Accessories</strong> </h1>
+            <p class="para text-[0.5rem] md:text-sm mt-[1rem]">There are multiple modes for the scooter for your multiple needs.</p>
+        </div>
+        <div class="product-infos flex justify-around items-center mt-4">
+            
+            <div>
+                <h1 class="text-4xl text-gray-700 mb-4"><strong>Golf Bag Rock</strong></h1>
+                <div class="flex items-center mb-1"><img src="Icon.png" alt=""><p>Material : Aluminium</p></div>
+                <div class="flex items-center mb-1"><img src="Icon.png" alt=""><p>color : black</p></div>
+                <div class="flex items-center mb-1"><img src="Icon.png" alt=""><p>capacity : 45lbs</p></div>
+                <div class="flex items-center mb-1"><img src="Icon.png" alt=""><p>Ease : steady and adjustable</p></div>
+                
+            </div>
+            <img class="image-golf"src="golf bag rock.png" alt="">
+        </div>
+        <div class="product-info flex justify-around items-center mt-4">
+            <img src="shopping rack.png" alt="">
+            
+            <div>
+                <h1 class="text-4xl text-gray-700 mb-4"><strong>Shopping Rack</strong></h1>
+                <div class="flex items-center mb-1"><img src="Icon.png" alt=""><p>Material : Aluminium Alloy</p></div>
+                <div class="flex items-center mb-1"><img src="Icon.png" alt=""><p>color : black</p></div>
+                <div class="flex items-center mb-1"><img src="Icon.png" alt=""><p>capacity : 45lbs</p></div>
+                <div class="flex items-center mb-1"><img src="Icon.png" alt=""><p>Ease : steady and adjustable</p></div>
+                
+            </div>
+            
+        </div>
+
+        <div class="text-center">
+            <button class= "py-3 px-4 border-4 border-gray-700 rounded-lg text-2xl text-gray-800"><strong>More Accessories Coming soon</strong></button>
+        </div>
+        <div class=" text-center mt-6">
+            <h1 class="text-gray-700 text-2xl md:text-5xl "> <strong>Gallery</strong> </h1>
+            <p class="para text-[0.5rem] md:text-sm mt-[1rem]">There are multiple modes for the scooter for your multiple needs.</p>
+        </div>
+
+        <div class="container2 mt-6">
+            <div class="box-1">
+                <img src="gallery scooter.png" alt="">
+
+            </div>
+            <div class="box-2">
+                <img src="gallery built quality.png" alt="">
+            </div>
+            <div class="box-3">
+                <div><button class= "w-[15rem] py-3 px-4 border-2 border-gray-700 rounded-lg text-lg text-gray-800"><strong>Battery Images</strong></button>
+                </div>
+                <div><button class= "w-[15rem] py-3 px-4 border-2 border-gray-700 rounded-lg text-lg text-gray-800"><strong>Spare Parts Images</strong></button></div>
+                <div>
+                    <button class= "w-[15rem] py-3 px-4 border-2 border-gray-700 rounded-lg text-lg text-gray-800"><strong>charging Cable Images</strong></button>
+                </div>
+            </div>
+            <div class="box-4">
+                <img src="gallery parts.png" alt="">
+            </div>
+        </div>
+        <div class=" text-center mt-6">
+            <h1 class="text-gray-700 text-2xl md:text-5xl "> <strong>Testimonials</strong> </h1>
+        </div>    
+        <div class="cardholder flex justify-center items-center mt-8 flex-wrap">
+            <div class="cards card1">
+                <div>
+                    <img src="Screenshot 2023-08-04 125545.png">
+
+                </div>
+                <p>Slate helps you see how many<br>more days you need to<br>to reach your financial goals.</p>
+
+                <img class="h-8 w-8" src="Justus Menke.png">
+            </div>
+            <div class="cards card2">
+                <div>
+                    <img src="Screenshot 2023-08-04 125545.png">
+
+                </div>
+                <p>Slate helps you see how many<br>more days you need to<br>to reach your financial goals.</p>
+                <img class="h-8 w-8" src="serhiy hipskyy.png">
+            </div>
+            <div class="cards card3">
+                <div>
+                    <img class="text-left" src="Screenshot 2023-08-04 125545.png">
+                </div>
+                <p>Slate helps you see how many<br>more days you need to<br>to reach your financial goals.</p>
+                <img class="h-8 w-8" src="Britain Eriksen.png">
+            </div>
+        </div>
+
+        <div class=" text-center mt-12">
+            <h1 class="text-gray-700 text-2xl md:text-5xl "> <strong>Subscribe To Our Newsletter</strong> </h1>
+            <p class="para text-[0.5rem] md:text-sm mt-[1rem]">subscribe to our newsletter to get amazing offers in future.</p>
+            <label for=""></label>
+            <input class="mt-8 px-4 py-3 bg-slate-100" type="email" placeholder="Enter Your Email">
+            <button class="py-[1.15rem] px-4 text-xs text-white bg-gray-700 rounded-md mt-8">Get Start</button>
+        </div>
+
+
+        
+    </section>
+
+    <!-- footer -->
+
+    <footer class="bg-gray-700">
+        <div class="flex justify-between items-center">
+            <div>
+                <img src="footer scooter.png" alt="">
+            </div>
+            
+            <div class="p-[0.5rem]">
+                <h1><strong>About</strong></h1>
+                <p class="mt-8 text-sm">Company</p>
+                <p class="mt-4 text-sm">Team</p>
+                <p class="mt-4 text-sm">Profile</p>
+                <p class="mt-4 text-sm">Carrer</p>
+            </div>
+            <div class="p-[0.5rem]">
+                <h1><strong>Resources</strong></h1>
+                <p class="mt-8 text-sm">Contact</p>
+                <p class="mt-4 text-sm">Application</p>
+                <p class="mt-4 text-sm">Features</p>
+                <p class="mt-4 text-sm text-gray-700">.</p>
+            </div>
+            <div class="p-[0.5rem]">
+                <h1><strong>Legal</strong></h1>
+                <p class="mt-8 text-sm">Copyright Privacy</p>
+                <p class="mt-4 text-sm">Policy Disclaimer</p>
+                <p class="mt-4 text-sm">Terms</p>
+                <p class="mt-4 text-sm">Carrer</p>
+            </div>
+            
+        </div>
+        <div class="text-center">
+            <h1>Copyright 2021.All Rights Reserved.</h1>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
